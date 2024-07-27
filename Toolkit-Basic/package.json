@@ -1,18 +1,22 @@
 {
   "name": "toolkit-basic",
   "version": "1.0.0",
+  "author": "Murilo Ramalho da Mata",
   "main": "expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "start": "npx expo start",
+    "pre-build": "npx expo prebuild",
+    "android": "expo run:android",
+    "development":"eas build --profile development --platform android",
+    "ios": "expo run:ios",
     "web": "expo start --web"
   },
   "dependencies": {
     "expo": "~51.0.22",
     "expo-status-bar": "~1.12.1",
     "react": "18.2.0",
-    "react-native": "0.74.3"
+    "react-native": "0.74.3",
+    "expo-dev-client": "~4.0.20"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
